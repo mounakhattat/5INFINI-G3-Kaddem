@@ -73,6 +73,8 @@ public class ContratServiceImpl implements  IContratService{
             log.info("endDate: "+startDate);
             log.info("executionTime: "+executionTime+ " ms");
             log.info("executionTime: "+executionTime+ " msmmmmmmmm");
+            //log.info("executionTime: "+executionTime+ " s;lslsl");
+
 
             return ce;
         }
