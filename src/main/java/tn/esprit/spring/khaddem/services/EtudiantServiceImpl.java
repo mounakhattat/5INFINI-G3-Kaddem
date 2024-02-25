@@ -47,6 +47,7 @@ public class EtudiantServiceImpl implements IEtudiantService{
     public Etudiant retrieveEtudiant(Integer idEtudiant) {
         System.out.println("touta");
         System.out.println("bendaha");
+        System.out.println("modif3");
         return etudiantRepository.findById(idEtudiant).get();
 
     }
