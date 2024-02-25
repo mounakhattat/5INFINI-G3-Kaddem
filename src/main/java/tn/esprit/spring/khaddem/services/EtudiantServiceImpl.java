@@ -45,7 +45,9 @@ public class EtudiantServiceImpl implements IEtudiantService{
 
     @Override
     public Etudiant retrieveEtudiant(Integer idEtudiant) {
+        System.out.println("touta");
         return etudiantRepository.findById(idEtudiant).get();
+
     }
 
     @Override
