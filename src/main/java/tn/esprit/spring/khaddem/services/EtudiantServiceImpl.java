@@ -34,7 +34,7 @@ public class EtudiantServiceImpl implements IEtudiantService{
     @Override
     public Etudiant addEtudiant(Etudiant e) {
         etudiantRepository.save(e);
-        System.out.println("SonarQu");
+
 
         return e;
     }
@@ -47,10 +47,7 @@ public class EtudiantServiceImpl implements IEtudiantService{
 
     @Override
     public Etudiant retrieveEtudiant(Integer idEtudiant) {
-        System.out.println("touta");
-        System.out.println("bendaha");
-        System.out.println("modif3");
-        System.out.println("non");
+
 
         return etudiantRepository.findById(idEtudiant).get();
 
@@ -64,6 +61,7 @@ public class EtudiantServiceImpl implements IEtudiantService{
     @Override
     public void assignEtudiantToDepartement(Integer etudiantId, Integer departementId) {
         Etudiant e = etudiantRepository.findById(etudiantId).get();
+
         Departement d= departementRepository.findById(departementId).get();
         e.setDepartement(d);
         etudiantRepository.save(e);

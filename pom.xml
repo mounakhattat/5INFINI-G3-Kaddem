@@ -11,7 +11,7 @@
     <groupId>tn.esprit.spring</groupId>
     <artifactId>5INFINI-G3-Kaddem</artifactId>
     <version>4.0</version>
-    <name>khaddem</name>
+    <name>MounaKhattat</name>
     <description>khaddem</description>
     <properties>
         <java.version>8</java.version>
