@@ -61,7 +61,7 @@ public class EtudiantServiceImpl implements IEtudiantService{
     @Override
     public void assignEtudiantToDepartement(Integer etudiantId, Integer departementId) {
         Etudiant e = etudiantRepository.findById(etudiantId).get();
-
+//aa
         Departement d= departementRepository.findById(departementId).get();
         e.setDepartement(d);
         etudiantRepository.save(e);
