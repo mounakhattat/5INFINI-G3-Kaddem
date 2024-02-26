@@ -2,7 +2,7 @@ version: "3"
 services:
   springboot-app:
     # container_name: spring-app
-    image: ,mounakhattat/5infini-g3-kaddem-4.0
+    image: mounakhattat/5infini-g3-kaddem-4.0
     restart: always
     build: .
     ports:
