@@ -2,7 +2,6 @@ package tn.esprit.spring.khaddem.services;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import tn.esprit.spring.khaddem.entities.Contrat;
 import tn.esprit.spring.khaddem.entities.Etudiant;
@@ -64,7 +63,6 @@ public class ContratServiceImpl implements  IContratService{
         log.info("debut methode addAndAffectContratToEtudiant");
         Etudiant etudiant=etudiantRepository.findByNomEAndPrenomE(nomE,prenomE);
         log.info("etudiant: "+etudiant.getNomE()+" "+etudiant.getPrenomE());
-        // nb contrats actifs
         Integer nbContratsActifs= etudiant.getContrats().size();
         if(nbContratsActifs>5) {
             log.info("nombre de contrats autorisés est atteint");
@@ -73,7 +71,6 @@ public class ContratServiceImpl implements  IContratService{
             log.info("endDate: "+startDate);
             log.info("executionTime: "+executionTime+ " ms");
             log.info("executionTime: "+executionTime+ " msmmmmmmmm");
-            //log.info("executionTime: "+executionTime+ " s;lslsl");
 
 
             return ce;
