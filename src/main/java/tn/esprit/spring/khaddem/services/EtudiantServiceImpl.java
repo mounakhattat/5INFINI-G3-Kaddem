@@ -48,7 +48,7 @@ public class EtudiantServiceImpl implements IEtudiantService{
         System.out.println("touta");
         System.out.println("bendaha");
         System.out.println("modif3");
-        System.out.println("ouii");
+        System.out.println("non");
 
         return etudiantRepository.findById(idEtudiant).get();
 
