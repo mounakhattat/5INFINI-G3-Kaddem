@@ -34,7 +34,7 @@ public class EtudiantServiceImpl implements IEtudiantService{
     @Override
     public Etudiant addEtudiant(Etudiant e) {
         etudiantRepository.save(e);
-        System.out.println("SonarQu");
+      //  System.out.println("SonarQu");
 
         return e;
     }
