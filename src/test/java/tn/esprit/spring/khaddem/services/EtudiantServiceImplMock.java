@@ -19,14 +19,14 @@ import javax.transaction.Transactional;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-//@ExtendWith(MockitoExtension.class)
-//@Transactional //=> @Transactional, toutes les modifications apportées à la//
+@ExtendWith(MockitoExtension.class)
+@Transactional //=> @Transactional, toutes les modifications apportées à la//
         //base de données pendant le test seront annulées après l'exécution du test
         // ce qui garantit que l'état de la base de données reste inchangé.
         // @SpringBootTest //Annotation pour test
 class EtudiantServiceImplMock {
 
-/*
+
     @InjectMocks
     private EtudiantServiceImpl etudiantService;
 
@@ -70,6 +70,6 @@ class EtudiantServiceImplMock {
         Mockito.verifyNoMoreInteractions(equipeRepository);
         Mockito.verifyNoMoreInteractions(etudiantRepository);
     }
-*/
+
 
 }
