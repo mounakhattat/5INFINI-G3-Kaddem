@@ -18,3 +18,12 @@ services:
     environment:
       PMA_HOST: mysqldb
       PMA_ARBITRARY: 1
+
+  backend:
+    depends_on:
+      - mysqldb
+    container_name: backend
+    ports:
+      - '8040:8040'
+    image: nada/backend
+    restart: unless-stopped
