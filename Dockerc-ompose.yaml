@@ -25,5 +25,5 @@ services:
     container_name: backend
     ports:
       - '8040:8040'
-    image: nada/backend
+    image: nada/imagepost:latest
     restart: unless-stopped
