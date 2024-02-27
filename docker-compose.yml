@@ -16,7 +16,7 @@ services:
     container_name: mysqldb
     image: mysql
     volumes:
-      -  /home/Kaddem/DevopsProject/db:/var/lib/mysql
+     -  /home/Kaddem/DevopsProject/db:/var/lib/mysqll
     ports:
       - 3307:3306
     environment:
