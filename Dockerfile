@@ -1,6 +1,11 @@
-FROM openjdk:8-alpine
-EXPOSE 8089
-ADD target/5INFINI-G3-Kaddem-4.0.jar 5INFINI-G3-Kaddem-4.0.jar
-ENTRYPOINT ["java","-jar","/5INFINI-G3-Kaddem-4.0.jar"]
-# fadit
+FROM maven:3.8.4-openjdk-11
 
+
+WORKDIR /app
+
+COPY pom.xml ./
+RUN mvn dependency:resolve
+
+COPY src ./src
+
+CMD ["mvn", "spring-boot:run"]
