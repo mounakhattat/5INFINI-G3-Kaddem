@@ -12,7 +12,6 @@ import tn.esprit.spring.khaddem.repositories.EtudiantRepository;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Slf4j
@@ -32,9 +31,9 @@ public class EtudiantServiceImpl implements IEtudiantService{
     }
 
     @Override
-    public Etudiant addEtudiant(Etudiant et) {
-        etudiantRepository.save(et);
-        return et;
+    public Etudiant addEtudiant(Etudiant e) {
+        etudiantRepository.save(e);
+        return e;
     }
 
     @Override
