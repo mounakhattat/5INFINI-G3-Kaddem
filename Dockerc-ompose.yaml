@@ -24,6 +24,6 @@ services:
       - mysqldb
     container_name: backend
     ports:
-      - '8040:8040'
+      - '8089:8089'
     image: nada/imagepost:latest
     restart: unless-stopped
