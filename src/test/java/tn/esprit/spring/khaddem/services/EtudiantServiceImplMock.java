@@ -24,9 +24,10 @@ import static org.junit.jupiter.api.Assertions.*;
         //base de données pendant le test seront annulées après l'exécution du test
         // ce qui garantit que l'état de la base de données reste inchangé.
         // @SpringBootTest //Annotation pour test
+    //kk
 class EtudiantServiceImplMock {
 
-
+//
     @InjectMocks
     private EtudiantServiceImpl etudiantService;
 
