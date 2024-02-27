@@ -23,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @Transactional //=> @Transactional, toutes les modifications apportées à la//
         //base de données pendant le test seront annulées après l'exécution du test
         // ce qui garantit que l'état de la base de données reste inchangé.
-        // @SpringBootTest //Annotation pour test
+     //    @SpringBootTest //Annotation pour test
 class EtudiantServiceImplMock {
 
 //

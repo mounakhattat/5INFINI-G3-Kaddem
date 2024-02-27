@@ -2,7 +2,6 @@ package tn.esprit.spring.khaddem.services;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tn.esprit.spring.khaddem.entities.*;
 import tn.esprit.spring.khaddem.repositories.ContratRepository;
@@ -13,12 +12,13 @@ import tn.esprit.spring.khaddem.repositories.EtudiantRepository;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Slf4j
 @AllArgsConstructor
 public class EtudiantServiceImpl implements IEtudiantService{
-//mmm
+
     EtudiantRepository etudiantRepository;
 
     DepartementRepository departementRepository;
@@ -32,13 +32,13 @@ public class EtudiantServiceImpl implements IEtudiantService{
     }
 
     @Override
-    public Etudiant addEtudiant(Etudiant e) {
-        etudiantRepository.save(e);
-        return e;
+    public Etudiant addEtudiant(Etudiant et) {
+        etudiantRepository.save(et);
+        return et;
     }
 
     @Override
-    public Etudiant updateEtudiant(Etudiant e) {
+    public Etudiant updateEtudiant(Etudiant e ) {
         etudiantRepository.save(e);
         return e;
     }
