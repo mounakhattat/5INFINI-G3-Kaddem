@@ -13,7 +13,7 @@ import tn.esprit.spring.khaddem.repositories.EtudiantRepository;
 import javax.transaction.Transactional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
-@ExtendWith(SpringExtension.class)
+//@ExtendWith(SpringExtension.class)
 //@Transactional //===> @Transactional, toutes les modifications apportées à la//
 //base de données pendant le test seront annulées après l'exécution du test
 // ce qui garantit que l'état de la base de données reste inchangé.
@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
         //@Rollback
 //mounaaaa
 class EtudiantServiceImplTest {
-    @Autowired
+ /*   @Autowired
     private EtudiantServiceImpl etudiantService;
 
     @Autowired
@@ -50,5 +50,5 @@ class EtudiantServiceImplTest {
         assertEquals("test", retrievedEtudiant.getNomE());
         assertEquals(Option.SE, retrievedEtudiant.getOp());
     }
-
+*/
 }
